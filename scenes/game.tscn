@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/game.lua" type="Script" id=1]
 [ext_resource path="res://scenes/controller.lua" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://tool.lua" type="Script" id=4]
 
 [node name="game" type="Node"]
 script = ExtResource( 1 )
@@ -18,3 +20,8 @@ script = ExtResource( 2 )
 
 [node name="camera_2d" type="Camera2D" parent="node_2d"]
 current = true
+
+[node name="icon" type="Sprite" parent="."]
+position = Vector2( -103, 44 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
